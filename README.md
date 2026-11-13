@@ -1,4 +1,3 @@
-# COMP535 Project Starter Code
 
 ## Requirements
 
@@ -40,7 +39,7 @@ Create an executable JAR with dependencies and run it:
 
 ```bash
 mvn clean package assembly:single
-java -jar target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf
+java -jar target/ -1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf
 ```
 
 ## Troubleshooting
@@ -61,9 +60,9 @@ java -jar target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.con
 
 ### "Could not find or load main class" error
 - Make sure you built the JAR file: `mvn clean package assembly:single`
-- Verify the JAR exists: `ls target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar`
+- Verify the JAR exists: `ls target/ -1.0-SNAPSHOT-jar-with-dependencies.jar`
 - Rebuild the project: `mvn clean package assembly:single`
-- Use the correct command: `java -jar target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf`
+- Use the correct command: `java -jar target/ -1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf`
 
 ### Maven settings.xml warning
 - If you see a warning about "Unrecognised tag: 'blocked'" in Maven settings.xml, you can safely ignore it
@@ -99,14 +98,14 @@ mvn clean package assembly:single
 
 Run:
 
-java -jar target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf
+java -jar target/ -1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf
 
 Router configuration files must be used appropriately for each router.
 
 
 
 
-# COMP535 PA2 — Distributed Router
+#   PA2 — Distributed Router
 
 ## Overview
 
@@ -128,7 +127,7 @@ mvn clean package assembly:single
 
 Open a separate terminal for each router. From the project root, run one router per terminal, using its configuration file:
 
-java -jar target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf
+java -jar target/ -1.0-SNAPSHOT-jar-with-dependencies.jar conf/router1.conf
 
 For other routers, replace `router1.conf` with `router2.conf`, `router3.conf`, and so on, as needed.
 
@@ -168,7 +167,7 @@ Tests performed included:
 - `pom.xml` — Maven build configuration.
 
 
-# COMP535 PA3 — Dynamic Topology and Failure Detection
+#   PA3 — Dynamic Topology and Failure Detection
 
 ## Overview
 
@@ -259,6 +258,3 @@ Tests performed with multiple router processes:
 - Reconnecting a router after it quit.
 - A declined connection request, and a duplicate connection attempt, were rejected.
 
-## Collaboration Statement
-
-I completed this project individually. All implementation, testing, and documentation were done by me.
